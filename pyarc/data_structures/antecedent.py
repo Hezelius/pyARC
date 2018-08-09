@@ -33,7 +33,7 @@ class Antecedent(ComparableItemSet):
         self.frozenset = frozenset(self)
         
     
-    def __getattr__(self, attr_name):
+    def __getattr_mod__(self, attr_name):
         """
         Parameters
         ----------
@@ -50,6 +50,7 @@ class Antecedent(ComparableItemSet):
             return item
         else:
             raise AttributeError("No attribute of that name")
+        return None
             
     
     def __getitem__(self, idx):

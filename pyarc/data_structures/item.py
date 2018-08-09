@@ -60,6 +60,9 @@ class Item():
 
         return "Item{{{}}}".format(self.__get_tuple())
 
+    def get_tuple(self):
+        return (self.attribute, self.value)
+
     def string(self):
         """Method for getting simpler representation.
         

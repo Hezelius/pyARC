@@ -128,8 +128,8 @@ class M2Algorithm(RuleBuilderAlgorithm):
         min_idx = min_indices[0]
         
         final_classifier = [ rule for rule in rules_list[:min_idx + 1] ]
-        default_class = default_classes_list[min_idx]
-
+        #default_class = default_classes_list[min_idx]
+        default_class = 'N/A'
         if not default_class:
             i = min_idx
             while not default_class:
